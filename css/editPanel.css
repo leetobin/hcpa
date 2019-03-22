@@ -1,0 +1,88 @@
+#edit-panel {
+	display : flex;
+	align-items : center;
+	font-family: heads;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+}
+
+#modalContent div{
+	cursor: pointer;
+}
+
+#edit-panel button {
+	color: #333;
+	background-color: #fff;
+	margin-bottom: 0;
+	border: 0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border-radius: 2px;
+	font-family: heads;
+	font-size: 1em;
+	margin:2px;
+	padding:1px;
+}
+
+#edit-panel button:hover,.edit-panel button:focus,.edit-panel button:active {
+  border-color: #eea236;
+  box-shadow:  0 0 10px #eea236;
+}
+
+
+
+.btn-inputs:hover {
+  text-shadow: 0 0 4px #fff;
+}
+
+
+
+
+.undecideds {
+	margin-left: 2px;
+	width: 28px;
+	height: 28px;
+	position: relative;
+	color:black;
+	background: #fcfff4;
+	background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.undecideds label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+  
+}
+.undecideds label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #27ae60;
+  background: linear-gradient(to bottom, #27ae60 0%, #145b32 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.undecideds label:hover::after {
+  opacity: 0.3;
+}
+.undecideds input[type=checkbox] {
+  visibility: hidden;
+}
+.undecideds input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}

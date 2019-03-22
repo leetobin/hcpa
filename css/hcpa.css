@@ -1,0 +1,99 @@
+html,
+body {
+	font-family: "Arial Narrow", sans-serif;
+	background-image: url("../../cpa/css/paper.png");
+    background-repeat: repeat;
+	font-size:1em;
+	color: black;
+	user-select:none;
+	-moz-user-select:none;
+}
+#container{
+	position:absolute;
+	transform-origin : 0 0;
+	white-space: nowrap;
+	width: 100%;
+	min-width:900px;
+}
+
+
+/* no blue line around elements! */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.hidden{
+	display:none !important;
+}
+
+input.editTitle[type=text]{
+	cursor:text;
+	user-select: text;
+    box-sizing:border-box; /* stop it being bigger than containing element */
+    width:100%;
+    padding:0;
+    margin:0;
+    border:0;
+    font-size:inherit;
+    font-family: inherit;
+    text-align:inherit;
+	z-index:501;
+}
+
+ul{
+	list-style-type: none;
+	padding:0px;
+	margin:0;
+}
+
+body,html{ 
+	width:100%;
+	height:100%;
+	padding: 0;
+	margin: 0;
+	overflow:hidden;
+}
+
+
+@font-face {
+	font-family: heads;
+    src: url('../../cpa/css/BebasNeue Book.woff');
+}
+
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+a[href^="mailto:"]:hover {
+	color: hotpink;
+}
+
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+
+#dataShow {
+    width: 100%;
+    height: 100px;
+    font-family: monospace;
+    font-size: 5px;
+	user-select: text;
+}
